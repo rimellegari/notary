@@ -1,0 +1,148 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0;
+    
+}
+ body {background-color: white;
+   
+ }
+/*header*/
+
+.page-header {
+    background-color:/*#20A5EB*/ #164F78;
+    padding: 1rem;
+    margin-bottom: 1em;
+    color: white;
+    border-bottom: #FE6700 solid 3px;
+}
+
+.page-header h1 {
+    padding: 0.5rem;
+}
+
+/*main section*/
+
+.container {
+    margin-left: 25rem;
+    margin-right: 30rem
+}
+.row {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 20px;
+}
+
+.reader {
+    margin-left: 1rem;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.main-card {
+    border-radius: 10px 10px 4px 4px;
+    height: 500px;
+    
+}
+.card-header, .card-footer {
+    font-size: 2rem;
+    padding: 0.5rem;
+    background-color:  #b0bec5/*#20A5EB*/;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.card-footer {
+    border-radius:0px 0px 5px 5px;
+}
+
+.card-body {
+    padding-left: 1rem;
+    border-left: solid 2px #aaa;
+    border-right: solid 2px #aaa;
+    background-color: #fff;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+/*secondary section*/
+
+.widgets {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sec-card-header {
+   
+    padding: 0.5rem;
+    background-color:  #b0bec5/*#20A5EB*/;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.sec-card-body {
+    min-height: 5rem;
+    padding-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.widgets ul {
+   height: 100%;
+
+}
+
+.widgets li {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.search-input {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.sec-card-footer {
+    border-radius:0px 0px 5px 5px;
+    background-color:  #b0bec5/*#20A5EB*/;
+    min-height: 30px;
+ }
+
+
+/*responsive*/
+
+@media (max-width: 600px) {
+
+    .container {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .reader {
+        padding-left: 1rem;
+        display:flexbox;
+        flex-direction: column;
+       
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+    }
+
+    .card-body {
+        height: 70vh;
+    }
+    
+    .widgets {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
